@@ -31,5 +31,8 @@ module.exports = {
         files: ['*.js'],
         excludedFiles: 'babel.config.js',
       }
-    ]
+    ],
+    rules: {
+      'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
+    }
 };
