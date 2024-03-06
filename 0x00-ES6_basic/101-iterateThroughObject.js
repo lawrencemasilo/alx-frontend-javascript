@@ -1,3 +1,8 @@
 export default function iterateThroughObject(reportWithIterator) {
-  return Array.from(reportWithIterator).join(' | ');
+  let result = '';
+  for (const employee of reportWithIterator) {
+    result += `${employee} | `;
+  }
+
+  return result.slice(0, -3);
 }
