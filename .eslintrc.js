@@ -25,6 +25,7 @@ module.exports = {
         'LabeledStatement',
         'WithStatement',
       ],
+      'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
     },
     overrides:[
       {
@@ -32,7 +33,4 @@ module.exports = {
         excludedFiles: 'babel.config.js',
       }
     ],
-    rules: {
-      'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
-    }
 };
