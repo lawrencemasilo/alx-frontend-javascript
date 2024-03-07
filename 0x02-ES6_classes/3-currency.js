@@ -33,4 +33,9 @@ export default class Currency {
       this._name = newName;
     }
   }
+
+  displayFullCurrency() {
+    // eslint-disable-next-line no-underscore-dangle
+    return `${this._name} (${this._code})`;
+  }
 }
