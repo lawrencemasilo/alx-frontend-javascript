@@ -1,4 +1,4 @@
-import Currency from ''./3-currency';
+import Currency from './3-currency';
 
 export default class Pricing {
   constructor(amount, currency) {
@@ -28,8 +28,8 @@ export default class Pricing {
   }
 
   set currency(newCurrency) {
-    // eslint-disable-next-line no-underscore-dangle
     if (newCurrency instanceof Currency) {
+      // eslint-disable-next-line no-underscore-dangle
       this._currency = newCurrency;
     }
   }
