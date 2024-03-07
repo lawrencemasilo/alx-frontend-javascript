@@ -1,13 +1,9 @@
 export class HolbertonClass {
   constructor(year, location) {
-    if (typeof year === 'number') {
-      // eslint-disable-next-line no-underscore-dangle
-      this._year = year;
-    }
-    if (typeof location === 'string') {
-      // eslint-disable-next-line no-underscore-dangle
-      this._location = location;
-    }
+    // eslint-disable-next-line no-underscore-dangle
+    this._year = year;
+    // eslint-disable-next-line no-underscore-dangle
+    this._location = location;
   }
 
   get year() {
@@ -23,14 +19,10 @@ export class HolbertonClass {
 
 export class StudentHolberton {
   constructor(firstName, lastName, holbertonClass) {
-    if (typeof firstName === 'string') {
-      // eslint-disable-next-line no-underscore-dangle
-      this._firstName = firstName;
-    }
-    if (typeof lastName === 'string') {
-      // eslint-disable-next-line no-underscore-dangle
-      this._lastName = lastName;
-    }
+    // eslint-disable-next-line no-underscore-dangle
+    this._firstName = firstName;
+    // eslint-disable-next-line no-underscore-dangle
+    this._lastName = lastName;
     // eslint-disable-next-line no-underscore-dangle
     this._holbertonClass = holbertonClass;
   }
