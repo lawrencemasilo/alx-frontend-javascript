@@ -29,12 +29,12 @@ export default class Pricing {
 
   set currency(newCurrency) {
     // eslint-disable-next-line no-underscore-dangle
-    this._currency = this.currency;
+    this._currency = newCurrency;
   }
 
   displayFullCurrency() {
     // eslint-disable-next-line no-underscore-dangle
-    return `${this._amount} ${this._currency._name} (${this._currency._code})`;
+    return `${this._amount} ${this._currency.name} (${this._currency.code})`;
   }
 
   static convertPrice(amount, conversionRate) {
