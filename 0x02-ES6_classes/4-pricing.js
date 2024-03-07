@@ -1,4 +1,4 @@
-import Currency from "./3-currency";
+import Currency from ''./3-currency';
 
 export default class Pricing {
   constructor(amount, currency) {
@@ -7,7 +7,7 @@ export default class Pricing {
       this._amount = amount;
     }
     // eslint-disable-next-line no-underscore-dangle
-    this._currency = currency;
+    this._currency = currency instanceof Currency ? currency : new Currency();
   }
 
   get amount() {
@@ -29,7 +29,9 @@ export default class Pricing {
 
   set currency(newCurrency) {
     // eslint-disable-next-line no-underscore-dangle
-    this._currency = newCurrency;
+    if (newCurrency instanceof Currency) {
+      this._currency = newCurrency;
+    }
   }
 
   displayFullCurrency() {
