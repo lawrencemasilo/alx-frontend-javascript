@@ -26,7 +26,7 @@ export default class HolbertonCourse {
   }
 
   set length(newLength) {
-    if (typeof this.newLength === 'number') {
+    if (typeof newLength === 'number') {
       // eslint-disable-next-line no-underscore-dangle
       this._length = newLength;
     }
