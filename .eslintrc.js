@@ -27,6 +27,7 @@ module.exports = {
       ],
       'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
       'no-unused-vars': 'off',
+      'class-methods-use-this': 'off',
     },
     overrides:[
       {
