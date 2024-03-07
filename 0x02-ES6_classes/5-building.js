@@ -12,8 +12,6 @@ export default class Building {
   }
 
   evacuationWarningMessage() {
-    // eslint-disable-next-line no-underscore-dangle
-    const temp = this._sqft;
     throw new Error('Class extending Building must override evacuationWarningMessage');
   }
 }
