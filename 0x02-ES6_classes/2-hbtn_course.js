@@ -1,9 +1,13 @@
 export default class HolbertonCourse {
   constructor(name, length, students) {
-    // eslint-disable-next-line no-underscore-dangle
-    this._name = typeof name === 'string' ? name : '1';
-    // eslint-disable-next-line no-underscore-dangle
-    this._length = typeof length === 'number' ? length : 0;
+    if (typeof name === 'string') {
+      // eslint-disable-next-line no-underscore-dangle
+      this._name = name;
+    }
+    if (typeof length === 'number') {
+      // eslint-disable-next-line no-underscore-dangle
+      this._length = length;
+    }
     // eslint-disable-next-line no-underscore-dangle
     this._students = Array.isArray(students) ? students : [];
   }
