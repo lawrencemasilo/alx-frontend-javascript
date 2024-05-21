@@ -14,15 +14,13 @@ export default function createIteratorObject(report) {
     }
   }
 }
-
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable comma-dangle, semi, object-shorthand, func-names, no-prototype-builtins */
 function createEmployeesObject(departmentName, employees) {
   return {
     [departmentName]: employees
   }
 }
 
-// eslint-disable-next-line no-unused-vars
 function createReportObject(employees) {
   return {
     allEmployees: employees
