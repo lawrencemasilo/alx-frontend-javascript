@@ -12,17 +12,19 @@ export default function createIteratorObject(report) {
         yield employee;
       }
     }
-  };
+  }
 }
 
+// eslint-disable-next-line no-unused-vars
 function createEmployeesObject(departmentName, employees) {
   return {
     [departmentName]: employees
-  };
+  }
 }
 
+// eslint-disable-next-line no-unused-vars
 function createReportObject(employees) {
-    return {
-        allEmployees: employees
-    };
+  return {
+    allEmployees: employees
+  }
 }
